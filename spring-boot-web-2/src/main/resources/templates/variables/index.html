@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:texto="${titulo}"></title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+
+    <ul>
+        <li>
+            <a th:href="@{/variables/string/}+'Hola Andrés'">Concatenar una variable</a>
+        </li>
+
+        <li>
+            <a th:href="@{/variables/string/}+'Que tal John'">Concatenar una variable</a>
+        </li>
+
+        <li>
+            <a th:href="@{/variables/string/}+'Saludos Andrés'+ '/' + 7">Concatenar una variable</a>
+        </li>
+    </ul>
+</body>
+</html>

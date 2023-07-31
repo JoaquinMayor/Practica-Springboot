@@ -1,0 +1,25 @@
+Usar las siguientes dependencias: Spring Web,Thymeleaf , Spring Boot DevTool, Spring Data JPA, MySQL Driver, 
+
+type: Maven o gradle, es el administrador de dependencias, para generar nuestra apñlicacion, nuestro proyecto, permitirndo copilar/construir
+el jar el war, cuando queramos publicar en producción 
+
+packaging: en jar es mas portable, el war para publicar en un servidor externo
+
+group: organiza el nombre packages
+
+Los package sueles compenzar con com, el dominio de la empresa, nombre del prkoyecto web app (En este orden de elementos, es una convencion y se separan con . y se escribe todo junto) 
+El primer package es el raiz de la aplicacion 
+
+
+Dentro del proyecto en la carpeta pom, podemos modificar la version de java y las dependencia
+
+dentro de java/app o web/ tenemos la aplicacion
+dentro de java/resources aplication.properties se tiene la configuración principal de springboot, por ejemplo si queremos cambiar el puerto con server.port:8090
+Tambien se modifican concecciones a base de datos el url, las credenciales, el username, el password, el driver, el dialecto para el motor
+
+dentrod de java/resources van los recursos estaticos de la aplicacion, por ejemplo hoja de estilos, javascripts, imagenes y en template se guardan las plantillas las vistas de los controladores
+
+
+en aplication properties se pone en el siguiente orden, tipo, el controlador, nombre del metodo, nombre del atributo
+
+para poder hacer ??? primero abrimos el terminal, ejecutamos .\mvnw.cms package, luego levantamos el proyecto con java -jar
